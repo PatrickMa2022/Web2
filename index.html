@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        PMA's Website
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="accomplish.html">Accomplishments</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pictures.html">Pictures</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1> Patrick Ma</h1>
+        <p1>Version 2.0</p1><br><br><br><br>
+        <a href="https://www.instagram.com/_patrickm2026_/" class="hero-btn">Connect with me to learn more</a>
+    </div>    
+    </section>
+    <!-----course-->
+    <section class="course">
+        <h1>Goals for 2023</h1>
+        <p>
+            Something that I am still trying to figure out.
+        </p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Have fun</h3>
+                <p>Something something something</p>
+            </div>
+            <div class="course-col">
+                <h3>Compete</h3>
+                <p>Something something something</p>
+            </div>
+            <div class="course-col">
+                <h3>Learn</h3>
+                <p>Something something something</p>
+            </div>
+        </div>
+    </section>
+
+
+
+<!--------JavaScript for toggle menu -------->  
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>
