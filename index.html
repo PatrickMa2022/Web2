@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+           background-color: rgb(252, 215, 177);
+        }
+     </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        PMA's Website
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="accomplish.html">Accomplishments</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pictures.html">Pictures</a></li>
+                    <li><a href="contact.html">Requests</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1> Patrick Ma</h1>
+        <p1>Version 2.0</p1><br><br><br><br>
+        <a href="https://www.instagram.com/patrickm2026/" class="hero-btn">Connect with me on Instagram</a>
+        <a href="https://www.linkedin.com/in/patrick-ma-ab5a6a248/" class="hero-btn">Connect with me on LinkedIn</a>
+    </div>    
+    </section>
+    <!-----course-->
+    <section class="course">
+        <h1> Measurements for my success</h1>
+        <p>
+           
+        </p>
+        <div class="row">
+            <div class="course-col">
+                <b><h3>Work Hard</h3></b>
+                <p>Enhance my physical well-being, cultivate <br>a resilient mindset, and refine my work ethic.</p>
+            </div>
+            <div class="course-col">
+                <b><h3>Compete</h3></b>
+                <p> Strive for excellence both in the <br> pool and in my academic pursuits.</p>
+            </div>
+            <div class="course-col">
+                <b><h3>Learn</h3></b>
+                <p> Pursue excellence and personal<br> growth regardless of the location.</p> 
+            </div>
+        </div>
+    </section>
+
+
+
+<!--------JavaScript for toggle menu -------->  
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>
